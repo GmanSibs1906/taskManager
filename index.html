@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task Manager</title>
+  <link rel="stylesheet" href="styles.css">
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/0f183b565a.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+  
+  <div class="task-manager">
+    <h1>
+        <img src="./logo.png" alt="" width="50">
+        Cohort Presentations
+    </h1>
+    <div class="task-table">
+      <div class="table-header">
+        <div class="header-item">Cohort</div>
+        <div class="header-item">Presentation</div>
+        <div class="header-item">Date</div>
+        <div class="header-item">Time</div>
+        <div class="header-item">Added by</div>
+        <div class="header-item">Meeting</div>
+        <div class="header-item">Actions</div>
+      </div>
+      <div class="table-body" id="task-list">
+        <!-- Tasks will be dynamically added here  -->
+      </div>
+    </div>
+
+    <!-- Capture data to be displayed -->
+    <div class="add-task">
+      <input type="text" id="groupPresenting" placeholder="Group Presenting">
+      <input type="text" id="presentation" placeholder="Presentation">
+      <input type="date" id="date">
+      <input type="time" id="time">
+      <input type="text" id="addedBy" placeholder="Added by">
+      <input type="text" id="meetingLink" placeholder="Meeting Link">
+      <button onclick="addTask()"><i class="fa-solid fa-plus"></i></button>
+      <button onclick="updateTask()">Update </button>
+    </div>
+  </div>
+
+  <script src="index.js"></script>
+</body>
+</html>
